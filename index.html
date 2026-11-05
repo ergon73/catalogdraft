@@ -1,38 +1,82 @@
 <!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="CatalogDraft — локальная мастерская проверки товарных текстов: CSV, ручной обмен с Qwen, сверка и экспорт одобренных карточек.">
-  <meta name="theme-color" content="#164c3e">
-  <title>CatalogDraft — товарные тексты под контролем</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="logic.js" defer></script>
-  <script src="storage.js" defer></script>
-  <script src="demo-data.js" defer></script>
-  <script src="ui.js" defer></script>
-</head>
-<body>
-  <a class="skip-link" href="#main">К содержимому</a>
-  <div class="shell">
-    <aside class="sidebar">
-      <a href="#/catalog" class="brand" aria-label="CatalogDraft — каталог"><span class="brand-mark" aria-hidden="true">cd</span><span>CatalogDraft<small>мастерская товарных текстов</small></span></a>
-      <span class="side-label">РАБОЧАЯ ОБЛАСТЬ</span>
-      <nav aria-label="Основная навигация" id="navigation"></nav>
-      <div class="side-bottom"><span class="local-dot" aria-hidden="true"></span><strong>В вашем браузере</strong><p>Исходники и тексты обрабатываются локально. Перенос — через резервный файл.</p><span class="tag">Учебный мини-продукт</span></div>
-    </aside>
-    <div class="workspace">
-      <header class="topbar"><span>КАТАЛОГ → ЧЕРНОВИК → ПРОВЕРКА</span><div id="storage-badge" class="storage-badge"></div></header>
-      <div id="storage-alert"></div>
-      <div class="notice-wrap"><div id="notice" role="status" aria-live="polite" hidden></div></div>
-      <main id="main" tabindex="-1"></main>
-      <footer class="footer"><span>CatalogDraft / 1.0</span><span>ИИ предлагает текст. Решение остаётся за вами.</span></footer>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="CatalogDraft — локальная мастерская проверки товарных текстов: CSV, ручной обмен с Qwen, сверка и экспорт одобренных карточек."
+    />
+    <meta name="theme-color" content="#164c3e" />
+    <title>CatalogDraft — товарные тексты под контролем</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="logic.js" defer></script>
+    <script src="storage.js" defer></script>
+    <script src="demo-data.js" defer></script>
+    <script src="ui.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">К содержимому</a>
+    <div class="shell">
+      <aside class="sidebar">
+        <a href="#/catalog" class="brand" aria-label="CatalogDraft — каталог"
+          ><span class="brand-mark" aria-hidden="true">cd</span
+          ><span
+            >CatalogDraft<small>мастерская товарных текстов</small></span
+          ></a
+        >
+        <span class="side-label">РАБОЧАЯ ОБЛАСТЬ</span>
+        <nav aria-label="Основная навигация" id="navigation"></nav>
+        <div class="side-bottom">
+          <span class="local-dot" aria-hidden="true"></span
+          ><strong>В вашем браузере</strong>
+          <p>
+            Исходники и тексты обрабатываются локально. Перенос — через
+            резервный файл.
+          </p>
+          <span class="tag">Учебный мини-продукт</span>
+        </div>
+      </aside>
+      <div class="workspace">
+        <header class="topbar">
+          <span>КАТАЛОГ → ЧЕРНОВИК → ПРОВЕРКА</span>
+          <div id="storage-badge" class="storage-badge"></div>
+        </header>
+        <div id="storage-alert"></div>
+        <div class="notice-wrap">
+          <div id="notice" role="status" aria-live="polite" hidden></div>
+        </div>
+        <main id="main" tabindex="-1"></main>
+        <footer class="footer">
+          <span>CatalogDraft / 1.0</span
+          ><span>ИИ предлагает текст. Решение остаётся за вами.</span>
+        </footer>
+      </div>
     </div>
-  </div>
-  <input id="file-csv" type="file" accept=".csv,text/csv" class="file-input" aria-label="Загрузить товарный CSV">
-  <input id="file-response" type="file" accept=".json,application/json" class="file-input" aria-label="Загрузить JSON-ответ Qwen">
-  <input id="file-backup" type="file" accept=".json,application/json" class="file-input" aria-label="Восстановить JSON-резерв">
-  <dialog id="modal" aria-labelledby="modal-title"><div id="modal-content"></div></dialog>
-  <noscript>Для работы CatalogDraft включите JavaScript в браузере.</noscript>
-</body>
+    <input
+      id="file-csv"
+      type="file"
+      accept=".csv,text/csv"
+      class="file-input"
+      aria-label="Загрузить товарный CSV"
+    />
+    <input
+      id="file-response"
+      type="file"
+      accept=".json,application/json"
+      class="file-input"
+      aria-label="Загрузить JSON-ответ Qwen"
+    />
+    <input
+      id="file-backup"
+      type="file"
+      accept=".json,application/json"
+      class="file-input"
+      aria-label="Восстановить JSON-резерв"
+    />
+    <dialog id="modal" aria-labelledby="modal-title">
+      <div id="modal-content"></div>
+    </dialog>
+    <noscript>Для работы CatalogDraft включите JavaScript в браузере.</noscript>
+  </body>
 </html>
