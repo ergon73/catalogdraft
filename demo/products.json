@@ -1,0 +1,102 @@
+[
+  {
+    "sku": "ORG-001",
+    "name": "Органайзер «Линия»",
+    "material": "Полипропилен",
+    "color": "Серый",
+    "width_cm": "20",
+    "depth_cm": "10",
+    "height_cm": "8",
+    "pack_qty": "1"
+  },
+  {
+    "sku": "ORG-002",
+    "name": "Органайзер «Секция»",
+    "material": "Бамбук",
+    "color": "Натуральный",
+    "width_cm": "24",
+    "depth_cm": "12",
+    "height_cm": "10",
+    "pack_qty": "1"
+  },
+  {
+    "sku": "ORG-003",
+    "name": "Подставка «Ячейка»",
+    "material": "Металл",
+    "color": "Чёрный",
+    "width_cm": "18",
+    "depth_cm": "9",
+    "height_cm": "9",
+    "pack_qty": "1"
+  },
+  {
+    "sku": "ORG-004",
+    "name": "Органайзер «Куб»",
+    "material": "Полипропилен",
+    "color": "Белый",
+    "width_cm": "10",
+    "depth_cm": "10",
+    "height_cm": "10",
+    "pack_qty": "2"
+  },
+  {
+    "sku": "ORG-005",
+    "name": "Лоток «Лист»",
+    "material": "Металл",
+    "color": "Серый",
+    "width_cm": "30",
+    "depth_cm": "22",
+    "height_cm": "4",
+    "pack_qty": "1"
+  },
+  {
+    "sku": "ORG-006",
+    "name": "Органайзер «Модуль»",
+    "material": "Бамбук",
+    "color": "Натуральный",
+    "width_cm": "28",
+    "depth_cm": "14",
+    "height_cm": "12",
+    "pack_qty": "1"
+  },
+  {
+    "sku": "ORG-007",
+    "name": "Лоток «Ряд»",
+    "material": "Полипропилен",
+    "color": "Синий",
+    "width_cm": "25",
+    "depth_cm": "10",
+    "height_cm": "5",
+    "pack_qty": "2"
+  },
+  {
+    "sku": "ORG-008",
+    "name": "Подставка «Контур»",
+    "material": "Металл",
+    "color": "Белый",
+    "width_cm": "12",
+    "depth_cm": "12",
+    "height_cm": "10",
+    "pack_qty": "1"
+  },
+  {
+    "sku": "ORG-009",
+    "name": "Органайзер «Полка»",
+    "material": "Бамбук",
+    "color": "Натуральный",
+    "width_cm": "32",
+    "depth_cm": "16",
+    "height_cm": "15",
+    "pack_qty": "1"
+  },
+  {
+    "sku": "ORG-010",
+    "name": "Лоток «Штрих»",
+    "material": "Полипропилен",
+    "color": "Зелёный",
+    "width_cm": "22",
+    "depth_cm": "14",
+    "height_cm": "6",
+    "pack_qty": "1"
+  }
+]

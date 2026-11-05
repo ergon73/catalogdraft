@@ -1,0 +1,18 @@
+{
+  "name": "catalogdraft",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A local-first workspace for reviewing product copy from a CSV and a manually transferred Qwen response.",
+  "scripts": {
+    "test": "node --test tests/unit/logic.test.cjs",
+    "test:e2e": "playwright test",
+    "serve": "node scripts/serve.cjs"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "1.64.1"
+  }
+}
